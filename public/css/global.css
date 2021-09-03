@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background-color: #dae0e6;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e6e6e6; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(59, 59, 59); 
+  }
+
+/* HEADER */
+
+header{
+    background-color: white;
+    padding: 5px 5%;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+    header a{
+        color: black;
+        text-decoration: none;
+        height: 45px;
+        width: 175px;
+    }
+    header .brand{
+        display: flex;
+        height: 45px;
+        width: 175px;
+        align-items: center;
+    }
+        .brand img{
+            width: 55px;
+            margin-right: 7px;
+        }
+        .brand h1{
+            font-weight: 400;
+            font-size: 30px;
+        }
+    header .cerrar_session {
+        width: auto;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .cerrar_session {
+        width: auto;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .cerrar_session button {
+        padding: 4px 25px;
+        background: #1d1d1d;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+    }
+/* MENÚ */
+
+.menu{
+    width: 50px;
+    height: 100%;
+    padding-top: 55px;
+    background-color: royalblue;
+    transition: width 0.2s ease-in;
+}
+    .menu:hover{
+        width: 250px;
+    }
+    .menu .box{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .menu .box .option{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+    }
+    .menu .box .option{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+    }
+        .menu .box .option:hover{
+            background-color: rgba(255, 255, 255, 0.075);
+        }
+        .menu .box .option img{
+            width: 25px;
+            border-left: 3px solid transparent;
+            box-sizing: content-box;
+            padding: 5px 10px 5px 12px;
+        }
+        .menu .box .active{
+            background-color: rgb(45, 87, 214);
+        }
+        .menu .box .option .active{
+            border-left: 3px solid orangered;
+            background-color: transparent;
+        }
+        
+        .menu .box .option p{
+            margin-left: 5px;
+            font-size: 18px;
+            color: white;
+        }
+        .menu .box .option .img-user{
+            border-radius: 50%;
+            padding: 0;
+            margin: 13px;
+            border: none;
+        }
+        .menu .box .option1:hover{
+            background-color: royalblue;
+        }
+
+/* BODY */
+
+.window{
+    width: 100%;
+    height: 100vh;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    padding-top: 65px;
+}
+    .body .box{
+        background-color: white;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-right: 5px;
+    }
+        .box .plantilla{
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            overflow-y: auto;
+
+            flex-direction: column;
+        }
+        .box .plantilla .title{
+            width: 100%;
+            height: auto;
+            padding: 5px 0;
+        }
+        .box .plantilla .title h1{
+            font-size: 30px;
+            font-weight: 400;
+        }
+/* Display */
+.dn{
+    display: none;
+}
+.db{
+    display: block;
+}
+.df{
+    display: flex;
+}
+
+/* TABLAS */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: royalblue;
+    color: white;
+  }

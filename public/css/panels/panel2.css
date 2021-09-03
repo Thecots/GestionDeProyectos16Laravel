@@ -1,0 +1,288 @@
+.tabla_horas{
+    width: 100%;
+    height: auto;
+}
+
+.calendario{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.registrar{
+    display: flex ;
+    flex-direction: column;
+
+}
+
+#calendari{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 15px;
+
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.452);
+    border: 1px solid black;
+
+    margin: 10px;
+}
+
+.dia-box{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dia-box:hover{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.dia-box:active{
+    background-color: rgba(0, 0, 0, 0.299);
+}
+
+#calendari table td{
+    text-align: center;
+    padding: 1px;
+}
+
+#calendari table a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+.change-YM-box{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-YM-box p {
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.change-YM-box img{
+    width: 30px;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.change-YM-box img:hover{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.change-YM-box img:active{
+    background-color: rgba(0, 0, 0, 0.299);
+}
+
+
+.change-YM-box img:first-child{
+    transform: rotate(-90deg);
+}
+.change-YM-box img:last-child{
+    transform: rotate(90deg);
+}
+
+.diaa{
+    background-color: white !important;
+}
+
+div#nodias {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.horas1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.add-horas-table{
+    position: fixed;
+    display:  none;
+    justify-content: center;
+    align-items: center;
+    z-index: 49;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.404)
+}
+
+.table{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 38%);
+    border-radius: 5px;
+}
+
+.table input{
+    width: 100%;
+}
+
+.table section{
+    width: 100%;
+}
+
+.amb_hores {
+    background: royalblue;
+}
+.amb_hores a{
+    color: white !important;
+}
+
+.table select{
+    width: 100%;
+    height: 30px;
+    height: 35px;
+    font-size: 20px;    
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+.table input{
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.table p {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#guardarh{
+outline: none;
+background-color: royalblue;
+color: white;
+font-size: 18px;
+border: none;
+padding: 5px;
+cursor: pointer;
+
+}
+
+#cancelarh{
+    outline: none;
+    background-color: rgb(143, 143, 143);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+div#set_calendario_here{
+    width: 427px !important;
+}
+
+.p2-calendari{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.p2-contorno {
+    background-color: white;
+    padding: 14px;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 10px 10px 0px #0000004d;
+}
+
+.p2-tablas{
+    margin: 25px 0 10px 0;
+
+    width: 100%;
+    min-height: 10px;
+    height: auto;
+}
+
+.p2-tablas table{
+    margin-top: 15px;
+}
+
+.p2-title-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .p2-title-h h1{
+        font-weight: 300;
+        font-size: 35px;
+    }
+    .p2-title-h button{
+        margin: 0;
+    }
+.p2-error{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .p2-error h1{
+        font-weight: 300;
+        font-size: 40px;
+        color: red;
+    }
+
+
+.p2-añadir-box{
+    width: 95%;
+    height: 91%;
+    background-color: rgba(17, 17, 19, 0.185);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2-box-a{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+
+.box_to_destroy{
+    width: 100%;
+    height: 100%;
+}
